@@ -1,0 +1,6 @@
+[submodule "vendor/MultiMarkdown-4"]
+	path = vendor/MultiMarkdown-4
+	url = https://github.com/fletcher/MultiMarkdown-4.git
+[submodule "deps/mmd4"]
+	path = deps/mmd4
+	url = https://github.com/fletcher/MultiMarkdown-4.git
