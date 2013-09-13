@@ -1,7 +1,7 @@
 package multimarkdown
 
 // #cgo CFLAGS: -Ideps/mmd4
-// #cgo LDFLAGS: -Ldeps/mmd4 -lparse_utilities.o -llatex.o -lparse_utilities.o -lGLibFacade.o -lmemoir.o -lparser.o -lbeamer.o -ltext.o -lcritic.o -lodf.o -lwriter.o -lhtml.o -lopml.o
+// #cgo LDFLAGS: -Ldeps/mmd4 deps/mmd4/libMultimarkdown.a
 // #include <stdlib.h>
 // #include <stdbool.h>
 // #include <libMultimarkdown.h>
