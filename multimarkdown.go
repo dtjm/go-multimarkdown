@@ -1,10 +1,10 @@
 package multimarkdown
 
 // #cgo CFLAGS: -Ideps/mmd4
-// #cgo LDFLAGS: -Ldeps/mmd4 deps/mmd4/libMultimarkdown.a
+// #cgo LDFLAGS: -Ldeps/mmd4 deps/mmd4/libMultiMarkdown.a
 // #include <stdlib.h>
 // #include <stdbool.h>
-// #include <libMultimarkdown.h>
+// #include <libMultiMarkdown.h>
 import "C"
 
 import (
