@@ -1,6 +1,10 @@
 all: deps
 	go build
 
+clean:
+	(cd deps/mmd4; make clean)
+	rm  deps/mmd4/libMultiMarkdown.a
+
 test: deps
 	go test
 
@@ -12,8 +16,6 @@ deps/mmd4/libMultiMarkdown.h:
 
 deps/mmd4/libMultiMarkdown.a:
 	(cd deps/mmd4; \
-        git submodule init; \
-        git submodule update; \
         make; \
 		ar rcs libMultiMarkdown.a *.o)
 
