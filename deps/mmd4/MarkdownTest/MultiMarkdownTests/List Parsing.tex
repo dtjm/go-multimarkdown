@@ -1,0 +1,34 @@
+\input{mmd-article-header}
+\def\mytitle{MMD List Parsing Test}
+\input{mmd-article-begin-doc}
+
+\part{List Parsing}
+\label{listparsing}
+
+\begin{itemize}
+\item Item 1
+
+Second paragraph of item 1.
+The following blank line has 4 spaces.
+
+\end{itemize}
+
+Paragraph following the list that shouldn't be part of the list item.
+
+\part{Empty List item}
+\label{emptylistitem}
+
+(note space after second `*')
+
+\begin{itemize}
+\item first
+
+\item 
+
+\item third
+
+\end{itemize}
+
+\input{mmd-memoir-footer}
+
+\end{document}

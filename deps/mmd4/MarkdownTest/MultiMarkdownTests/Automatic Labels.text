@@ -1,0 +1,53 @@
+latex input:	mmd-article-header
+Title:	MultiMarkdown Autoreference Test  
+base header level:	2
+latex input:	mmd-article-begin-doc
+latex footer:	mmd-memoir-footer
+
+# 109&*&#()^ Can Start With Digit #
+
+# Strip out &%^ characters &*^ #
+
+
+# Special Cross Reference Cases #
+
+## 1 Cross-References: Special Characters!@#$%&*()<>^ ##
+
+And now, link to [1 Cross-References: Special Characters!@#$%&*()<>^][]
+
+# Заголовок по-русски #
+
+И ссылка на [Заголовок по-русски].
+
+Setext 1
+========
+
+
+Setext 2
+--------
+
+#Atx 1 #
+
+
+Link to [Setext 1].
+
+And [Setext 2].
+
+And [Atx 1].
+
+And [Atx 2] should fail.
+
+
+# Manual Header [label] #
+
+
+Manual Header 2 [label2]
+========================
+
+Manual Header 3 [label3]
+------------------------
+
+
+# Test Case [TeSt] #
+
+# Test 的 Multibyte #

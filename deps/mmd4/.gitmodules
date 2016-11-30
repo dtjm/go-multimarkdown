@@ -1,0 +1,15 @@
+[submodule "greg"]
+	path = greg
+	url = https://github.com/nddrylliog/greg.git
+[submodule "MarkdownTest"]
+	path = MarkdownTest
+	url = https://github.com/fletcher/MMD-Test-Suite.git
+[submodule "Support"]
+	path = Support
+	url = https://github.com/fletcher/MMD-Support.git
+[submodule "cheat-sheet"]
+	path = cheat-sheet
+	url = https://github.com/fletcher/human-markdown-reference.git
+[submodule "documentation"]
+	path = documentation
+	url = https://github.com/fletcher/MultiMarkdown-4.git

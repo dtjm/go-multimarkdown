@@ -1,0 +1,66 @@
+latex input:	mmd-article-header  
+Title:	Abbreviations  
+latex input:	mmd-article-begin-doc  
+latex footer:	mmd-memoir-footer  
+
+(Adapted from Michel Fortin's test suite for PHP Markdown Extra)
+
+Some text about HTML, SGML and HTML4.
+
+Let's talk about the U.S.A., (É.U. or É.-U. d'A. in French).
+
+*[HTML4]: Hyper Text Markup Language version 4
+*[HTML]: Hyper Text Markup Language
+*[SGML]: Standard Generalized Markup Language
+*[U.S.A.]: United States of America
+*[É.U.] : États-Unis d'Amérique
+*[É.-U. d'A.] : États-Unis d'Amérique
+
+And here we have a CD, some CDs, and some other CD's.
+
+*[CD]: Compact Disk
+
+Let's transfer documents through TCP/IP, using TCP packets.
+
+*[IP]: Internet Protocol
+*[TCP]: Transmission Control Protocol
+
+ ---
+
+Bienvenue sur [CMS](http://www.bidulecms.com "Bidule CMS").
+
+*[CMS]: Content Management System
+
+ ---
+
+ATCCE
+
+*[ATCCE]: Abbreviation "Testing" Correct 'Character' < Escapes >
+
+
+And let's use them again:
+
+HTML4
+HTML
+SGML
+U.S.A.
+CD
+IP
+TCP
+CMS
+ATCCE
+É.U.
+É.-U. d'A.
+
+
+
+> And HTML4 inside a blockquote
+
+* And HTML4 inside a list
+
+	* TCP in a list
+	* CMS in a list
+
+And now inside a [^footnote].
+
+[^footnote]: HTML4 and TCP

@@ -1,0 +1,77 @@
+<p>latex input: mmd-article-header<br/>
+Title: MultiMarkdown Sanity Test<br/>
+quoteslanguage: english<br/>
+latex input: mmd-article-begin-doc<br/>
+latex footer: mmd-memoir-footer </p>
+
+<h1>Section</h1>
+
+<p>Sanity check by Jonathan Coulombe</p>
+
+<p>A Reference to [Section]
+A Citation[#Citation]
+A Figure <a href="file.png">figure</a>
+A Table [table]
+A Link <a href="www.com">link</a>
+A Nowhere [Nowhere]</p>
+
+<p>B Reference to [][Section]
+B Citation[][#Citation]
+<!--B Figure [][figure]-->
+B Table [][table]
+<!--B Link [][link]-->
+B Nowhere [][Nowhere]</p>
+
+<p>C Reference to [Section][]
+C Citation[#Citation][]
+C Figure <a href="file.png">figure</a>
+C Table [table][]
+C Link <a href="www.com">link</a>
+C Nowhere [Nowhere][]</p>
+
+<p>D Reference to [option][Section]
+D Citation[option][#Citation]
+D Figure <a href="file.png">option</a>
+D Table [option][table]
+D Link <a href="www.com">option</a>
+D Nowhere [option][Nowhere]</p>
+
+<p>E Reference to [Section][option]
+E Citation[#Citation][option]
+E Figure [figure][option]
+E Table [table][option]
+E Link [link][option]
+E Nowhere [Nowhere][option]</p>
+
+<p>F Reference to <a href="Section">Section</a>
+F Citation<a href="Citation">#Citation</a>
+F Figure <a href="figure">figure</a>
+F Table <a href="table">table</a>
+F Link <a href="link">link</a>
+F Nowhere <a href="nowhere">Nowhere</a></p>
+
+<!--G Reference to [](Section)-->
+
+<!--G Citation[](Citation)-->
+
+<!--G Figure [](figure)-->
+
+<!--G Table [](table)-->
+
+<!--G Link [](link)-->
+
+<!--G Nowhere [](nowhere)-->
+
+<p>H Reference to <a href="#Section"></a>
+H Citation<a href="#Citation"></a>
+H Figure <a href="#figure"></a>
+H Table <a href="#table"></a>
+H Link <a href="#link"></a>
+H Nowhere <a href="#nowhere"></a></p>
+
+<p><img src="file.png" alt="figure" /></p>
+
+<p>[table]
+| a | b |
+|---|---|
+| x | y |</p>

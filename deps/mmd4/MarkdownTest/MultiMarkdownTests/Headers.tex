@@ -1,0 +1,60 @@
+\input{mmd-article-header}
+\def\mytitle{MultiMarkdown Headers Test}
+\def\latexmode{memoir}
+\input{mmd-article-begin-doc}
+
+\section{Normal Header}
+\label{normalheader}
+
+plain text
+
+\section{Normal Header with trailing space}
+\label{normalheaderwithtrailingspace}
+
+\chapter{Normal Header with trailing space}
+\label{normalheaderwithtrailingspace}
+
+plain text
+
+\section{Header with \href{http://www.google.com}{Link}}
+\label{headerwithlink}
+
+plain text
+
+\section{Header with \href{http://www.google.com}{Link}}
+\label{headerwithlink}
+
+and more plain text
+
+\section{Header with \href{http://www.google.com}{Link} and space}
+\label{headerwithlinkandspace}
+
+and more plain text
+
+The following should still be detected as headers:
+
+\chapter{Broken label [ text [}
+\label{brokenlabeltext}
+
+\section{Test Header 2 and}
+\label{label}
+
+\section{Broken Reference Link [label][label2]}
+\label{brokenreferencelinklabellabel2}
+
+\section{Reference link not label \href{http://example.com/}{label}}
+\label{referencelinknotlabellabellabel1}
+
+\section{Link \href{http://example.net/}{not label}}
+\label{linknotlabel}
+
+And link to [label2] and \href{http://example.com/}{label1}\footnote{\href{http://example.com/}{http:/\slash example.com\slash }} and label (\autoref{label}).
+
+\chapter{Header with ümlaut}
+\label{headerwithümlaut}
+
+link to Header with ümlaut (\autoref{headerwithümlaut}).
+
+\input{mmd-memoir-footer}
+
+\end{document}

@@ -1,0 +1,31 @@
+latex input:	mmd-article-header  
+Title:	Markdown in HTML Test  
+latex mode:	memoir  
+Base Header Level:	2  
+latex input:	mmd-article-begin-doc  
+latex footer:	mmd-memoir-footer  
+
+# Markdown Inside HTML #
+
+<div>This is *not* Markdown **encoded**.</div>
+
+<div markdown=1>This *is* Markdown **encoded**.</div>
+
+<div markdown="1">This *is* Markdown **encoded**.</div>
+
+<div markdown = 1>This *is* Markdown **encoded**.</div>
+
+<div markdown = "1">This *is* Markdown **encoded**.</div>
+
+
+<div markdown = " 1 " >This *is* Markdown **encoded**.</div>
+
+# Test Edge Cases #
+
+<pre>
+*a*
+</pre>
+
+<pre markdown="1">
+*a*
+</pre>

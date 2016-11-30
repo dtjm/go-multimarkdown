@@ -1,0 +1,65 @@
+\input{mmd-article-header}
+\def\mytitle{Link Attributes Test}
+\input{mmd-article-begin-doc}
+
+\part{Link Attributes}
+\label{linkattributes}
+
+This is a formatted \includegraphics[width=40pt,height=400pt]{http://path.to/image} and a \href{http://path.to/link.html}{link}\footnote{\href{http://path.to/link.html}{http:/\slash path.to\slash link.html}} with attributes.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[keepaspectratio,width=\textwidth,height=400pt]{http://path.to/image}
+\caption{image2}
+\label{image2}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[keepaspectratio,width=40pt,height=0.75\textheight]{http://path.to/image}
+\caption{image3}
+\label{image3}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[keepaspectratio,width=\textwidth,height=0.75\textheight]{http://path.to/image}
+\caption{image4}
+\label{image4}
+\end{figure}
+
+And \href{http://path.to/link.html}{the link}\footnote{\href{http://path.to/link.html}{http:/\slash path.to\slash link.html}}, \href{http://path.to/link.html}{link}\footnote{\href{http://path.to/link.html}{http:/\slash path.to\slash link.html}} , and \href{http://path.to/link.html}{}\footnote{\href{http://path.to/link.html}{http:/\slash path.to\slash link.html}} again.
+
+\href{http://path.to/link.html}{link}\footnote{\href{http://path.to/link.html}{http:/\slash path.to\slash link.html}}
+
+\href{http://path.to/link.html}{the link}\footnote{\href{http://path.to/link.html}{http:/\slash path.to\slash link.html}}
+
+Test various identifiers:
+
+\href{http://path.to/link-a.html}{link-a}\footnote{\href{http://path.to/link-a.html}{http:/\slash path.to\slash link-a.html}}
+
+\href{http://path.to/link-1.html}{link--1}\footnote{\href{http://path.to/link-1.html}{http:/\slash path.to\slash link-1.html}}
+
+\href{http://path.to/link--2.html}{link--2}\footnote{\href{http://path.to/link--2.html}{http:/\slash path.to\slash link-{}-2.html}}
+
+\href{http://path.to/link--a.html}{link--a}\footnote{\href{http://path.to/link--a.html}{http:/\slash path.to\slash link-{}-a.html}}
+
+\href{http://path.to/link---1.html}{link---1}\footnote{\href{http://path.to/link---1.html}{http:/\slash path.to\slash link-{}-{}-1.html}}
+
+Test link and markup \includegraphics[keepaspectratio,width=\textwidth,height=0.75\textheight]{http://path.to/image}
+
+\part{Basic Links}
+\label{basiclinks}
+
+An explicit \href{http://foo.com/}{link}\footnote{\href{http://foo.com/}{http:/\slash foo.com\slash }} with whitespace.
+
+\part{Broken Link and Image}
+\label{brokenlinkandimage}
+
+![\&][x](foo bar.png)
+
+[\&](foo bar)
+
+\input{mmd-memoir-footer}
+
+\end{document}

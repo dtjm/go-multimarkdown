@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="latexinput" content="mmd-article-header"/>
+	<title>MultiMarkdown Sanity Test</title>
+	<meta name="latexinput" content="mmd-article-begin-doc"/>
+	<meta name="latexfooter" content="mmd-memoir-footer"/>
+</head>
+<body>
+
+<h1 id="section">Section</h1>
+
+<p>Sanity check by Jonathan Coulombe</p>
+
+<p>A Reference to <a href="#section">Section</a>
+A Citation<span class="externalcitation">[#Citation]</span>
+A Figure <a href="file.png">figure</a>
+A Table <a href="#table">table</a>
+A Link <a href="www.com">link</a>
+A Nowhere [Nowhere]</p>
+
+<p>C Reference to <a href="#section">Section</a>
+C Citation<span class="externalcitation">[#Citation]</span>
+C Figure <a href="file.png">figure</a>
+C Table <a href="#table">table</a>
+C Link <a href="www.com">link</a>
+C Nowhere [Nowhere][]</p>
+
+<p>B Reference to <a href="#section"></a>
+B Citation<span class="externalcitation">[#Citation]</span>
+<!--B Figure [][figure]-->
+B Table <a href="#table"></a>
+<!--B Link [][link]-->
+B Nowhere [][Nowhere]</p>
+
+<p>D Reference to <a href="#section">option</a>
+D Citation<span class="externalcitation">[option][#Citation]</span>
+D Figure <a href="file.png">option</a>
+D Table <a href="#table">option</a>
+D Link <a href="www.com">option</a>
+D Nowhere [option][Nowhere]</p>
+
+<p>E Reference to [Section][option]
+E Citation<span class="externalcitation">[#Citation]</span>[option]
+E Figure [figure][option]
+E Table [table][option]
+E Link [link][option]
+E Nowhere [Nowhere][option]</p>
+
+<p>F Reference to <a href="Section">Section</a>
+F Citation<span class="externalcitation">[#Citation]</span>(Citation)
+F Figure <a href="figure">figure</a>
+F Table <a href="table">table</a>
+F Link <a href="link">link</a>
+F Nowhere <a href="nowhere">Nowhere</a></p>
+
+<!--G Reference to [](Section)-->
+
+<!--G Citation[](Citation)-->
+
+<!--G Figure [](figure)-->
+
+<!--G Table [](table)-->
+
+<!--G Link [](link)-->
+
+<!--G Nowhere [](nowhere)-->
+
+<p>H Reference to <a href="#Section"></a>
+H Citation<a href="#Citation"></a>
+H Figure <a href="#figure"></a>
+H Table <a href="#table"></a>
+H Link <a href="#link"></a>
+H Nowhere <a href="#nowhere"></a></p>
+
+<figure>
+<img src="file.png" alt="figure" id="figure" />
+<figcaption>figure</figcaption>
+</figure>
+
+<table>
+<caption id="table">table</caption>
+<colgroup>
+<col style="text-align:left;"/>
+<col style="text-align:left;"/>
+</colgroup>
+
+<thead>
+<tr>
+	<th style="text-align:left;">a</th>
+	<th style="text-align:left;">b</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+	<td style="text-align:left;">x</td>
+	<td style="text-align:left;">y</td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>

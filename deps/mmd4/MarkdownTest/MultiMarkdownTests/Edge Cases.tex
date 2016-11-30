@@ -1,0 +1,84 @@
+\input{mmd-article-header}
+\def\mytitle{Edge Cases}
+\input{mmd-article-begin-doc}
+
+\part{Strong and Emph}
+\label{strongandemph}
+
+The \textbf{\emph{quick}} brown \textbf{\emph{fox}} jumped
+
+The \textbf{\emph{quick}} brown fox jumped
+
+The \emph{\textbf{quick} brown fox} jumped
+
+The \textbf{\emph{quick} brown fox} jumped
+
+The \textbf{\emph{quick} brown \emph{fox}} jumped
+
+The \emph{\textbf{quick} brown \textbf{fox}} jumped
+
+This \emph{should} be parsed -- fo***o
+
+\part{More Strong and Emph}
+\label{morestrongandemph}
+
+This is \textbf{\emph{another} test} of \emph{italics} and \textbf{bold}.
+
+This is \textbf{\emph{another} test} of \textbf{bold} and \emph{italics}.
+
+This is \emph{\textbf{another} test} of \textbf{bold} and \emph{italics}.
+
+This is \emph{\textbf{another} test} of \emph{italics} and \textbf{bold}.
+
+This is \textbf{\emph{another} test} of \emph{italics} and \textbf{bold}.
+
+This is \textbf{\emph{another} test} of \textbf{bold} and \emph{italics}.
+
+This is \emph{\textbf{another} test} of \textbf{bold} and \emph{italics}.
+
+This is \emph{\textbf{another} test} of \emph{italics} and \textbf{bold}.
+
+\part{Can fail to process quickly}
+\label{canfailtoprocessquickly}
+
+\emph{a
+}a
+\emph{a
+}a
+\emph{a
+}a
+\emph{a
+}a
+\emph{a
+}a
+\emph{a
+}a
+\emph{a
+}a
+\emph{a
+}a
+\emph{a
+}a
+\emph{a
+}a
+*a
+aaaaa
+
+\part{Citations within Footnotes}
+\label{citationswithinfootnotes}
+
+Test~\citep{Citekey;}. Test2 ~\citep{Citekey;}. Test3.\footnote{~\citep{Citekey;}. A} Test4.\footnote{~\citep{Citekey;}. B}
+
+\begin{thebibliography}{0}
+
+\bibitem{Citekey;}
+This is an article
+
+
+
+
+\end{thebibliography}
+
+\input{mmd-memoir-footer}
+
+\end{document}
