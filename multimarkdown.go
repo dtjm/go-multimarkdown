@@ -58,7 +58,7 @@ func ConvertString(in string, flags, format int) (string, error) {
 	if format > 11 || format == 8 {
 		return "", fmt.Errorf("You must use one of the *_FORMAT constants")
 	}
-	var out *C.char = C.markdown_to_string(C.CString(in), C.int(flags), C.int(format))
+	var out *C.char = C.markdown_to_string(C.CString(in), C.ulong(flags), C.int(format))
 	defer C.free(unsafe.Pointer(out))
 	return C.GoString(out), nil
 }
